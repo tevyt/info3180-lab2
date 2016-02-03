@@ -18,8 +18,7 @@ from utils import current_date_time
 
 @app.route('/profile')
 def profile():
-    # render_template('profile.html')
-    return current_date_time()
+    return render_template('profile.html', date_time=current_date_time())
 
 @app.route('/')
 def home():
