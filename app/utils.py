@@ -1,8 +1,8 @@
 from time import strftime
 
-def current_date_time():
-    return strftime('%c')
+def current_date():
+    return strftime('%a %W %b %Y')
 
 
 if __name__ == '__main__':
-    print current_date_time()
+    print current_date()

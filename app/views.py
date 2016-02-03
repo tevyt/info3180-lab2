@@ -8,7 +8,7 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for
-from utils import current_date_time
+from utils import current_date
 
 
 ###
@@ -18,7 +18,7 @@ from utils import current_date_time
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html', date_time=current_date_time())
+    return render_template('profile.html', date=current_date())
 
 @app.route('/')
 def home():
